@@ -113,22 +113,34 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Abstract Section -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>The creation of digital replicas of physical objects has interesting applications for the preservation and diffusion of tangible cultural heritage. However, existing methods are often slow, expensive, and require expert knowledge. We propose a pipeline to generate a 3D replica of a scene using only RGB images (e.g., photos of a museum), and then extract a model for each item of interest (e.g., pieces in the exhibit). Our approach leverages advancements in novel view synthesis and Gaussian Splatting, modified for efficient 3D segmentation. This method does not require manual annotation, and the visual inputs can be collected using a standard smartphone, making it affordable and easy to deploy. We provide an overview of the method and baseline evaluation of the accuracy of object segmentation. The code is released as a Docker container, available at this <a href="https://github.com/mahtaabdn/GaussianHeritage/tree/main">link</a>.</p>
+          <p>The creation of digital replicas of physical objects has interesting applications for the preservation and diffusion of tangible cultural heritage. However, existing methods are often slow, expensive, and require expert knowledge. We propose a pipeline to generate a 3D replica of a scene using only RGB images (e.g., photos of a museum), and then extract a model for each item of interest (e.g., pieces in the exhibit). Our approach leverages advancements in novel view synthesis and Gaussian Splatting, modified for efficient 3D segmentation. This method does not require manual annotation, and the visual inputs can be collected using a standard smartphone, making it affordable and easy to deploy. We provide an overview of the method and baseline evaluation of the accuracy of object segmentation. The code is available as a Docker container at this <a href="https://github.com/mahtaabdn/GaussianHeritage/tree/main">GitHub link</a>.</p>
         </div>
       </div>
     </div>
 
-    <div class="columns is-centered">
+    <!-- Method Overview Section -->
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview and Pipeline</h2>
+        <div class="content has-text-justified">
+          <p>Given a set of images, we:</p>
+          <ul>
+            <li>a) use a web interface to upload them to a local server, where they are processed to generate</li>
+            <li>b) 2D instance segmentation masks and</li>
+            <li>c) a sparse 3D model.</li>
+            <li>With these, we train</li>
+            <li>d) a model capturing appearances and 3D segmentation of the scene, from which we then</li>
+            <li>e) extract a model of each object.</li>
+          </ul>
+          <p>The model we trained for 3D segmentation is based on Contrastive Gaussian Clustering.</p>
+        </div>
         <figure class="image">
-          <img src="./static/images/fig1.png" alt="Method Overview: From Image Capture to 3D Model Segmentation">
-        </figure>
-        <figure class="image">
-          <img src="./static/images/fig2.png" alt="Method Overview: From Image Capture to 3D Model Segmentation">
+          <img src="./static/images/fig1.png" alt="Method Overview and Pipeline">
         </figure>
       </div>
     </div>
