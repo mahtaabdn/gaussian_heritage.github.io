@@ -126,15 +126,16 @@
     <!-- Method Overview Section -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Method Overview and Pipeline</h2>
+        <h2 class="title is-3">Method Overview</h2>
         <div class="content has-text-justified">
           <p>Given a set of images, we:</p>
           <ul>
-            <li>a) use a web interface to upload them to a local server, where they are processed to generate</li>
-            <li>b) 2D instance segmentation masks and</li>
-            <li>c) a sparse 3D model.</li>
-            <li>With these, we train</li>
-            <li>d) a model capturing appearances and 3D segmentation of the scene, from which we then</li>
+            <li>a) use a web interface to upload them to a local server, where they are processed to generate:</li>
+            <ul>
+              <li>b) 2D instance segmentation masks and</li>
+              <li>c) a sparse 3D model.</li>
+            </ul>
+            <li>d) With these, we train a model capturing appearances and 3D segmentation of the scene, from which we then</li>
             <li>e) extract a model of each object.</li>
           </ul>
           <p>The model we trained for 3D segmentation is based on Contrastive Gaussian Clustering.</p>
