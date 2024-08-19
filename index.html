@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description"
-        content="Gaussian Heritage: 3D Digitization of Cultural Heritage with Integrated Object Segmentation. Learn about our approach to creating digital replicas using 3D Gaussian Splatting and novel view synthesis.">
+  <meta charset="utf-8">
+  <meta name="description" content="Gaussian Heritage: 3D Digitization of Cultural Heritage with Integrated Object Segmentation. Learn about our approach to creating digital replicas using 3D Gaussian Splatting and novel view synthesis.">
   <meta name="keywords" content="Cultural Heritage Digitization, 3D Scene Segmentation, Scene Understanding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gaussian Heritage: 3D Digitization of Cultural Heritage</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
 <body>
@@ -31,64 +48,69 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://yourwebsite.com">
-      <span class="icon">
+      <a class="navbar-item" href="#">
+        <span class="icon">
           <i class="fas fa-home"></i>
-      </span>
+        </span>
       </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://yourrelatedlink1.com">
-            Related Work 1
-          </a>
-          <a class="navbar-item" href="https://yourrelatedlink2.com">
-            Related Work 2
-          </a>
-        </div>
-      </div>
     </div>
   </div>
 </nav>
 
-<section class="hero is-primary is-bold">
+<section class="hero">
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">Gaussian Heritage</h1>
-      <h2 class="subtitle">3D Digitization of Cultural Heritage with Integrated Object Segmentation</h2>
-      <p>ECCV 2024 VISART Workshop</p>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Gaussian Heritage</h1>
+          <h2 class="subtitle is-3">3D Digitization of Cultural Heritage with Integrated Object Segmentation</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="#">Mahtab Dahaghin</a>,</span>
+            <span class="author-block"><a href="#">Myrna Castillo</a>,</span>
+            <span class="author-block"><a href="#">Kourosh Riahidehkordi</a>,</span>
+            <span class="author-block"><a href="#">Matteo Toso</a>,</span>
+            <span class="author-block"><a href="#">Alessio Del Bue</a></span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Pattern Analysis and Computer Vision (PAVIS) lab, Italian Institute of Technology (IIT)</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="[arXiv Link]" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>View on arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/mahtaabdn/Gaussian-Heritage" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code Repository</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/demo.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Experience the future of cultural heritage preservation with Gaussian Heritage.
+      </h2>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Authors</h2>
-        <p><a href="#">Mahtab Dahaghin</a>, <a href="#">Myrna Castillo</a>, <a href="#">Kourosh Riahidehkordi</a>, <a href="#">Matteo Toso</a>, and <a href="#">Alessio Del Bue</a></p>
-        <p>Pattern Analysis and Computer Vision (PAVIS) lab, Italian Institute of Technology (IIT)</p>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <a href="[arXiv Link]" class="button is-link is-medium">View on arXiv</a>
-        <a href="https://github.com/mahtaabdn/Gaussian-Heritage" class="button is-link is-medium">Code Repository</a>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <video autoplay loop muted playsinline>
-          <source src="demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -97,18 +119,14 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <figure class="image">
-          <img src="fig1.png" alt="Method Overview: From Image Capture to 3D Model Segmentation">
+          <img src="./static/images/fig1.png" alt="Method Overview: From Image Capture to 3D Model Segmentation">
         </figure>
         <figure class="image">
-          <img src="fig2.png" alt="Method Overview: From Image Capture to 3D Model Segmentation">
+          <img src="./static/images/fig2.png" alt="Method Overview: From Image Capture to 3D Model Segmentation">
         </figure>
       </div>
     </div>
@@ -116,10 +134,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Related Links</h2>
-        <p>This work is based on Contrastive Gaussian Clustering. For more details on the underlying methods, you can explore the following related works:</p>
-        <ul>
-          <li><a href="https://arxiv.org/abs/2404.12784" target="_blank">Contrastive Gaussian Clustering</a></li>
-        </ul>
+        <div class="content has-text-justified">
+          <p>This work is based on Contrastive Gaussian Clustering. For more details on the underlying methods, you can explore the following related works:</p>
+          <ul>
+            <li><a href="https://arxiv.org/abs/2404.12784" target="_blank">Contrastive Gaussian Clustering</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -128,7 +148,7 @@
         <h2 class="title is-3">BibTeX</h2>
         <div class="content has-text-justified">
           <pre><code>@article{your2024project,
-  author    = {Mahtab Dahaghin, Myrna Castillo, Kourosh Riahidehkordi, Matteo Toso, Alessio Del Bue},
+  author    = {Mahtab Dahaghin and others},
   title     = {Gaussian Heritage: 3D Digitization of Cultural Heritage},
   journal   = {ECCV VISART Workshop},
   year      = {2024},
